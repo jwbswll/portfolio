@@ -1,0 +1,35 @@
+* {
+  font-family: "Syne Mono", monospace;
+  background-color: #ffddb1;
+}
+
+h1 {
+  color: #6a5d4b;
+}
+
+p {
+  color: #6a5d4b;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100vw;
+}
+nav a {
+  text-decoration: none;
+  color: #6a5d4b;
+  padding: 10px;
+  font-size: 10em;
+  display: block;
+  width: 300px;
+}
+nav a:hover {
+  background-color: #6a5d4b;
+  color: #ffddb1;
+  transition: 0.5s ease;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */

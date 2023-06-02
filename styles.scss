@@ -1,0 +1,36 @@
+@use 'colors' as c;
+
+* {
+  font-family: "Syne Mono", monospace;
+  background-color: c.$primary;
+}
+
+h1 {
+  color: c.$secondary
+}
+
+p {
+  color: c.$secondary
+}
+
+nav {
+  display: flex;
+  // justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100vw;
+  a {
+    text-decoration: none;
+    color: c.$secondary;
+    padding: 10px;
+    font-size: 10em;
+    display: block;
+    width: 300px;
+    &:hover {
+      background-color: c.$secondary;
+      color: c.$primary;
+      transition: 0.5s ease;
+      transform: scale(1.1);
+    }
+  }
+}
