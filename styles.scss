@@ -7,7 +7,7 @@
 }
 
 header {
-  // margin-left: 50px;
+  margin-left: 50px;
   .header-name {
     color: c.$secondary;
     font-size: 60px;
@@ -23,17 +23,21 @@ header {
 }
 
 .navbar {
-  // margin-right: 50px;
+  margin-right: 50px;
+
   nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     a {
       text-decoration: none;
       color: c.$secondary;
       padding: 10px;
       font-size: 8em;
       scroll-behavior: smooth;
+      font-style: italic;
+
       &:hover {
         background-color: c.$secondary;
         color: c.$primary;
@@ -47,4 +51,39 @@ header {
 .page-section {
   height: 100vh;
   width: 100vw;
+
+  &--about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-content {
+      width: 500px; 
+    }
+  } 
+
+  &--projects {
+
+  }
+
+  &--contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+    .contact-links {
+      display: flex;
+      
+      .fa-brands {
+        font-size: 60px;
+        text-decoration: none;
+        color: c.$secondary;
+        background-color: c.$primary;
+        padding: 30px;
+      }
+    }
+  }
 }
+
