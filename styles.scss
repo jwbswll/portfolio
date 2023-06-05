@@ -106,13 +106,27 @@ header {
     align-items: center;
     .projects-gallery {
       display: flex;
-      width: 900px;
+      width: 100vw;
       justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap;
       &--item {
-        margin: 20px;
-        width: 33.3%;
+        margin: 10px;
+        width: 20%;
+        display: flex;
+        justify-content: column;
+        align-items: center;
+        flex-wrap: wrap;
+        &__links {
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          padding: 20px;
+          a {
+            font-size: 30px;
+          }
+          
+        }
       }
     }
   }
