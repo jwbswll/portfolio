@@ -4,6 +4,15 @@
   scroll-behavior: smooth;
 }
 
+.external-link {
+  text-decoration: none;
+  color: #c69951;
+}
+.external-link:hover {
+  color: #ffddb1;
+  background-color: #c69951;
+}
+
 header {
   margin-left: 50px;
 }
@@ -45,6 +54,16 @@ header .header-jobtitle {
 .page-section {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.page-section--heading {
+  text-align: center;
+  padding: 20px;
+}
+.page-section h4 {
+  text-align: center;
+  padding-bottom: 10px;
 }
 .page-section--about {
   display: flex;
@@ -52,7 +71,32 @@ header .header-jobtitle {
   align-items: center;
 }
 .page-section--about .about-content {
+  width: 600px;
+  padding: 0;
+}
+.page-section--about h4 {
+  padding-bottom: 25px;
+}
+.page-section--about .known-tech {
+  display: flex;
   width: 500px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.page-section--about .known-tech .tech-icon {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 70px;
+}
+.page-section--about .known-tech .tech-icon p {
+  font-weight: 600;
+  font-size: 0.7em;
+}
+.page-section--about .known-tech .tech-icon i {
+  font-size: 40px;
 }
 .page-section--contact {
   display: flex;
@@ -63,13 +107,13 @@ header .header-jobtitle {
 }
 .page-section--contact .contact-links {
   display: flex;
+  justify-content: space-evenly;
 }
 .page-section--contact .contact-links .fa-brands {
   font-size: 60px;
   text-decoration: none;
   color: #6a5d4b;
   background-color: #ffddb1;
-  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

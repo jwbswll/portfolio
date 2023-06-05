@@ -6,6 +6,15 @@
   scroll-behavior: smooth;
 }
 
+.external-link {
+  text-decoration: none;
+  color: c.$tertiary;
+  &:hover {
+    color: c.$primary;
+    background-color: c.$tertiary;
+  }
+}
+
 header {
   margin-left: 50px;
   .header-name {
@@ -51,6 +60,16 @@ header {
 .page-section {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  &--heading {
+    text-align: center;
+    padding: 20px;
+  }
+  h4 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
 
   &--about {
     display: flex;
@@ -58,7 +77,42 @@ header {
     align-items: center;
 
     .about-content {
-      width: 500px; 
+      width: 600px;
+      padding: 0;
+
+      // padding: 10px;
+      // border: 3px solid red; 
+    }
+    h4 {
+      padding-bottom: 25px;
+    }
+
+    .known-tech {
+      display: flex;
+      width: 500px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      // border: 3px solid red;
+      
+
+      .tech-icon {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 70px;
+        // border: 3px solid red;
+
+        p {
+          font-weight: 600;
+          font-size: 0.7em;
+        }
+
+        i {
+          font-size: 40px;
+        }
+      }
     }
   } 
 
@@ -75,13 +129,14 @@ header {
 
     .contact-links {
       display: flex;
+      justify-content: space-evenly;
       
       .fa-brands {
         font-size: 60px;
         text-decoration: none;
         color: c.$secondary;
         background-color: c.$primary;
-        padding: 30px;
+        &:hover {}
       }
     }
   }
