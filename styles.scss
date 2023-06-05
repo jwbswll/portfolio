@@ -101,7 +101,20 @@ header {
   } 
 
   &__projects {
-
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    .projects-gallery {
+      display: flex;
+      width: 900px;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      &--item {
+        margin: 20px;
+        width: 33.3%;
+      }
+    }
   }
 
   &__contact {
@@ -110,14 +123,12 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-
     .contact-links {
       width: 20vw;
       height: 10vw;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      
       .fa-brands {
         font-size: 60px;
         text-decoration: none;

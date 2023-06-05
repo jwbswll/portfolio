@@ -94,6 +94,22 @@ header .header-jobtitle {
 .page-section__about .known-tech__container--icon {
   font-size: 40px;
 }
+.page-section__projects {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+}
+.page-section__projects .projects-gallery {
+  display: flex;
+  width: 900px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page-section__projects .projects-gallery--item {
+  margin: 20px;
+  width: 33.3%;
+}
 .page-section__contact {
   display: flex;
   justify-content: center;
