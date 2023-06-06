@@ -76,12 +76,13 @@
   align-items: center;
 }
 .page-section__about .about-content {
-  width: 90vw;
+  width: 85vw;
   padding: 0;
 }
 .page-section__about .about-content__para {
   margin-bottom: 2vh;
-  text-align: center;
+  text-align: left;
+  font-size: 1.1em;
 }
 .page-section__about .known-tech {
   display: flex;
@@ -112,12 +113,12 @@
 .page-section__projects {
   height: 225vh;
   display: flex;
-  justify-content: column;
+  justify-content: center;
   align-items: center;
 }
 .page-section__projects .projects-gallery {
   display: flex;
-  width: 80vw;
+  width: 70vw;
   justify-content: column;
   align-items: center;
   flex-wrap: wrap;
@@ -127,21 +128,21 @@
   display: flex;
   justify-content: column;
   flex-wrap: wrap;
-  align-items: center;
 }
 .page-section__projects .projects-gallery--item__img {
-  width: 300px;
-  height: 200px;
+  width: 265px;
+  height: 176.7px;
 }
 .page-section__projects .projects-gallery--item p {
-  width: 300px;
+  width: 265px;
+  margin-top: 3vh;
 }
 .page-section__projects .projects-gallery--item__links {
   display: flex;
   width: 300px;
   justify-content: space-around;
-  padding: 20px;
-  margin-bottom: 5vh;
+  align-items: center;
+  margin: 3vh 0 7vh 0;
 }
 .page-section__projects .projects-gallery--item__links a {
   font-size: 30px;
