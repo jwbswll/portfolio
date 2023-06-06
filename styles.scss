@@ -71,7 +71,7 @@
   justify-content: center;
   &__heading {
     text-align: center;
-    padding: 20px;
+    padding-bottom: 5vh;
   }
   &__about {
     display: flex;
@@ -88,7 +88,7 @@
     }
     .known-tech {
       display: flex;
-      width: 50vw;
+      width: 60vw;
       flex-wrap: wrap;
       justify-content: space-around;
       &__heading {
@@ -108,13 +108,14 @@
         }
         &--icon {
           font-size: 40px;
+          padding-bottom: 1vh;
         }
       }
     }
   } 
 
   &__projects {
-    height: 250vh;
+    height: 225vh;
     display: flex;
     justify-content: column;
     align-items: center;
@@ -125,17 +126,24 @@
       align-items: center;
       flex-wrap: wrap;
       &--item {
-        margin: 10px;
-        width: 100%;
+        width:100%;
         display: flex;
         justify-content: column;
-        align-items: center;
         flex-wrap: wrap;
+        align-items: center;
+        &__img {
+          width: 300px;
+          height: 200px;
+        }
+        p {
+          width: 300px;
+        }
         &__links {
           display: flex;
-          width: 100%;
+          width: 300px;
           justify-content: space-around;
           padding: 20px;
+          margin-bottom: 5vh;
           a {
             font-size: 30px;
           }
@@ -150,17 +158,24 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    .page-section__heading {
+      padding-bottom: 5vh;
+    }
+    p {
+      padding-bottom: 7vh;
+    }
     .contact-links {
       width: 20vw;
       height: 10vw;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
-      .fa-brands {
+      &__icon {
         font-size: 60px;
         text-decoration: none;
         color: c.$tertiary;
         background-color: c.$primary;
+        margin: 2vh 5vw 2vh 5vw;
         &:hover {
           color: c.$secondary
         }

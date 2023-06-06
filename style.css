@@ -68,7 +68,7 @@
 }
 .page-section__heading {
   text-align: center;
-  padding: 20px;
+  padding-bottom: 5vh;
 }
 .page-section__about {
   display: flex;
@@ -85,7 +85,7 @@
 }
 .page-section__about .known-tech {
   display: flex;
-  width: 50vw;
+  width: 60vw;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -107,9 +107,10 @@
 }
 .page-section__about .known-tech__container--icon {
   font-size: 40px;
+  padding-bottom: 1vh;
 }
 .page-section__projects {
-  height: 250vh;
+  height: 225vh;
   display: flex;
   justify-content: column;
   align-items: center;
@@ -122,18 +123,25 @@
   flex-wrap: wrap;
 }
 .page-section__projects .projects-gallery--item {
-  margin: 10px;
   width: 100%;
   display: flex;
   justify-content: column;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+}
+.page-section__projects .projects-gallery--item__img {
+  width: 300px;
+  height: 200px;
+}
+.page-section__projects .projects-gallery--item p {
+  width: 300px;
 }
 .page-section__projects .projects-gallery--item__links {
   display: flex;
-  width: 100%;
+  width: 300px;
   justify-content: space-around;
   padding: 20px;
+  margin-bottom: 5vh;
 }
 .page-section__projects .projects-gallery--item__links a {
   font-size: 30px;
@@ -145,20 +153,27 @@
   align-items: center;
   width: 100vw;
 }
+.page-section__contact .page-section__heading {
+  padding-bottom: 5vh;
+}
+.page-section__contact p {
+  padding-bottom: 7vh;
+}
 .page-section__contact .contact-links {
   width: 20vw;
   height: 10vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
-.page-section__contact .contact-links .fa-brands {
+.page-section__contact .contact-links__icon {
   font-size: 60px;
   text-decoration: none;
   color: #FFCAB1;
   background-color: #9799ca;
+  margin: 2vh 5vw 2vh 5vw;
 }
-.page-section__contact .contact-links .fa-brands:hover {
+.page-section__contact .contact-links__icon:hover {
   color: #5C374C;
 }
 
