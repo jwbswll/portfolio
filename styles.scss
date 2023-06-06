@@ -80,7 +80,11 @@
     .about-content {
       width: 90vw;
       padding: 0;
-      
+      &__para {
+        margin-bottom: 2vh;
+        text-align: center;
+      }
+
     }
     .known-tech {
       display: flex;
@@ -88,7 +92,8 @@
       flex-wrap: wrap;
       justify-content: space-around;
       &__heading {
-        padding-bottom: 25px;
+        padding-top: 2vh;
+        padding-bottom: 3.5vh;
       }
       &__container {
         display: flex;

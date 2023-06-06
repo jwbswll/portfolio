@@ -79,6 +79,10 @@
   width: 90vw;
   padding: 0;
 }
+.page-section__about .about-content__para {
+  margin-bottom: 2vh;
+  text-align: center;
+}
 .page-section__about .known-tech {
   display: flex;
   width: 50vw;
@@ -86,7 +90,8 @@
   justify-content: space-around;
 }
 .page-section__about .known-tech__heading {
-  padding-bottom: 25px;
+  padding-top: 2vh;
+  padding-bottom: 3.5vh;
 }
 .page-section__about .known-tech__container {
   display: flex;
